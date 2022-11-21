@@ -1,0 +1,494 @@
+Last login: Sat Nov 12 14:08:01 on ttys000
+(base) ayeshasakhawatali@Murtazas-Air ~ % ls
+1_variables_operators.ipynb		Pictures
+3.1_data_structures_lists.ipynb		Public
+5_pseudocode.ipynb			Untitled.ipynb
+6_functions_intro_v2.ipynb		Untitled1.ipynb
+Applications				Untitled2.ipynb
+Desktop					measures_of_central_tendency (2).ipynb
+Documents				measures_of_central_tendency.ipynb
+Downloads				measures_of_dispersion.ipynb
+Library					my-files
+Movies					new-folder
+Music					opt
+(base) ayeshasakhawatali@Murtazas-Air ~ % mkdir IH-Labs
+(base) ayeshasakhawatali@Murtazas-Air ~ % ls
+1_variables_operators.ipynb		Pictures
+3.1_data_structures_lists.ipynb		Public
+5_pseudocode.ipynb			Untitled.ipynb
+6_functions_intro_v2.ipynb		Untitled1.ipynb
+Applications				Untitled2.ipynb
+Desktop					measures_of_central_tendency (2).ipynb
+Documents				measures_of_central_tendency.ipynb
+Downloads				measures_of_dispersion.ipynb
+IH-Labs					my-files
+Library					new-folder
+Movies					opt
+Music
+(base) ayeshasakhawatali@Murtazas-Air ~ % cd IH-Labs
+(base) ayeshasakhawatali@Murtazas-Air IH-Labs % git clone https://github.com/ayeshasakhawat/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 40 (delta 14), reused 11 (delta 11), pack-reused 17
+Receiving objects: 100% (40/40), 11.61 KiB | 625.00 KiB/s, done.
+Resolving deltas: 100% (14/14), done.
+(base) ayeshasakhawatali@Murtazas-Air IH-Labs % ls
+lab-bash
+(base) ayeshasakhawatali@Murtazas-Air IH-Labs % cd lab-bash
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % ls
+exercices	inputs		lorem		lorem-copy	outputs		readme.md
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % echo Hello World!
+Hello World!
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % mkdir new-dir
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % ls
+exercices	inputs		lorem		lorem-copy	new-dir		outputs		readme.md
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % rmdir new-dir
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % ls
+exercices	inputs		lorem		lorem-copy	outputs		readme.md
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % cp sed.txt copy_sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		copy_sed.txt	lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % mv sed.txt move_sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		copy_sed.txt	lorem.txt	move_sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem %  pwd
+/Users/ayeshasakhawatali/IH-Labs/lab-bash/lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % cs lorem-copy
+zsh: command not found: cs
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd lorem-copy
+cd: no such file or directory: lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % mv copy_sed.txt
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+dummy_file.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % pwd
+/Users/ayeshasakhawatali/IH-Labs/lab-bash
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % mv copy_sed.txt
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		copy_sed.txt	lorem.txt	move_sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % mv sed.txt ../lorem-copy
+mv: rename sed.txt to ../lorem-copy/sed.txt: No such file or directory
+(base) ayeshasakhawatali@Murtazas-Air lorem %  ls
+at.txt		at.txte		copy_sed.txt	lorem.txt	move_sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % mv sed.txt ../lorem-copy
+mv: rename sed.txt to ../lorem-copy/sed.txt: No such file or directory
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd..
+zsh: command not found: cd..
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+dummy_file.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		copy_sed.txt	lorem.txt	move_sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % mv move_sed.txt sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		copy_sed.txt	lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % mv sed.txt ../lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd..
+zsh: command not found: cd..
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+dummy_file.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % lorem
+zsh: command not found: lorem
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		copy_sed.txt	lorem.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % rmdir copy_sed.txt
+rmdir: copy_sed.txt: Not a directory
+(base) ayeshasakhawatali@Murtazas-Air lorem % rm copy_sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		lorem.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % pwd
+/Users/ayeshasakhawatali/IH-Labs/lab-bash
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+dummy_file.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % mv at.txt lorem.txt ../lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txte
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txte
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % mv sed.txt at.txt lorem.txt../lorem
+mv: lorem.txt../lorem is not a directory
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % mv sed.txt at.txt lorem.txt ../lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+dummy_file.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % cp sed.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file ... target_directory
+(base) ayeshasakhawatali@Murtazas-Air lorem % mv sed.txt ../lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+dummy_file.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		lorem.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % cp-R at.txt
+zsh: command not found: cp-R
+(base) ayeshasakhawatali@Murtazas-Air lorem % cp at.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file ... target_directory
+(base) ayeshasakhawatali@Murtazas-Air lorem % cp -r at.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file ... target_directory
+(base) ayeshasakhawatali@Murtazas-Air lorem % cp -r at.txt ../lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+at.txt		dummy_file.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cp lorem/lorem.txt lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		lorem.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % mv sed.txt ../lorem-copy
+mv: sed.txt and ../lorem-copy/sed.txt are identical
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cp -r sed.txt ../lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % rm sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % cp -r sed.txt ../lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) ayeshasakhawatali@Murtazas-Air lorem % cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+(base) ayeshasakhawatali@Murtazas-Air lorem % cat lorem
+cat: lorem: No such file or directory
+(base) ayeshasakhawatali@Murtazas-Air lorem % cat lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.%
+(base) ayeshasakhawatali@Murtazas-Air lorem % head-3 sed.txt
+zsh: command not found: head-3
+(base) ayeshasakhawatali@Murtazas-Air lorem % head sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) ayeshasakhawatali@Murtazas-Air lorem % head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem-copy
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cat lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.%
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % echo hi my name is ayesha >> sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+hi my name is ayesha
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % tail -3 sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+hi my name is ayesha
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % echo Homo homini lupus. ..sed.txt
+Homo homini lupus. ..sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % echo Homo homini lupus. >>sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+hi my name is ayesha
+Homo homini lupus.
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % tail -3 sed.txt
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+hi my name is ayesha
+Homo homini lupus.
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % sed 's/e/E/g' at.txt
+At vEro Eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praEsEntium voluptatum
+dElEniti atquE corrupti quos dolorEs ET quas molEstias ExcEpturi sint occaEcati cupiditatE non
+providEnt, similiquE sunt in culpa qui officia dEsErunt mollitia animi, id Est laborum ET dolorum fuga.
+Et harum quidEm rErum facilis Est ET ExpEdita distinctio.
+Nam libEro tEmporE, cum soluta nobis Est EligEndi optio cumquE nihil impEdit quo minus id quod
+maximE placEat facErE possimus, omnis voluptas assumEnda Est, omnis dolor rEpEllEndus.
+TEmporibus autEm quibusdam ET aut officiis dEbitis aut rErum nEcEssitatibus saEpE EvEniET
+ut ET voluptatEs rEpudiandaE sint ET molEstiaE non rEcusandaE.
+ItaquE Earum rErum hic tEnETur a sapiEntE dElEctus, ut aut rEiciEndis voluptatibus maiorEs
+alias consEquatur aut pErfErEndis doloribus aspEriorEs rEpEllat
+(base) ayeshasakhawatali@Murtazas-Air lorem-copy % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % dscl . list /Users | grep -v “^_”
+_accessoryupdater
+_amavisd
+_analyticsd
+_appinstalld
+_appleevents
+_applepay
+_appowner
+_appserver
+_appstore
+_ard
+_assetcache
+_astris
+_atsserver
+_avbdeviced
+_avphidbridge
+_backgroundassets
+_biome
+_calendar
+_captiveagent
+_ces
+_clamav
+_cmiodalassistants
+_coreaudiod
+_coremediaiod
+_coreml
+_ctkd
+_cvmsroot
+_cvs
+_cyrus
+_darwindaemon
+_datadetectors
+_demod
+_devdocs
+_devicemgr
+_diskimagesiod
+_displaypolicyd
+_distnote
+_dovecot
+_dovenull
+_dpaudio
+_driverkit
+_eppc
+_findmydevice
+_fpsd
+_ftp
+_gamecontrollerd
+_geod
+_hidd
+_iconservices
+_installassistant
+_installcoordinationd
+_installer
+_jabber
+_kadmin_admin
+_kadmin_changepw
+_knowledgegraphd
+_krb_anonymous
+_krb_changepw
+_krb_kadmin
+_krb_kerberos
+_krb_krbtgt
+_krbfast
+_krbtgt
+_launchservicesd
+_lda
+_locationd
+_logd
+_lp
+_mailman
+_mbsetupuser
+_mcxalr
+_mdnsresponder
+_mmaintenanced
+_mobileasset
+_mysql
+_nearbyd
+_netbios
+_netstatistics
+_networkd
+_notification_proxy
+_nsurlsessiond
+_oahd
+_ondemand
+_postfix
+_postgres
+_qtss
+_reportmemoryexception
+_rmd
+_sandbox
+_screensaver
+_scsd
+_securityagent
+_sntpd
+_softwareupdate
+_spotlight
+_sshd
+_svn
+_taskgated
+_teamsserver
+_timed
+_timezone
+_tokend
+_trustd
+_trustevaluationagent
+_unknown
+_update_sharing
+_usbmuxd
+_uucp
+_warmd
+_webauthserver
+_windowserver
+_www
+_wwwproxy
+_xserverdocs
+ayeshasakhawatali
+daemon
+murtazakhawaja
+nobody
+root
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % pwd
+/Users/ayeshasakhawatali/IH-Labs/lab-bash
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % cd lorem
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % find -type f -name "*.txt"
+find: illegal option -- t
+usage: find [-H | -L | -P] [-EXdsx] [-f path] path ... [expression]
+       find [-H | -L | -P] [-EXdsx] -f path [path ...] [expression]
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % dir *.txt
+zsh: command not found: dir
+(base) ayeshasakhawatali@Murtazas-Air lorem % find . -type f -name "*.txt"
+./at.txt
+./lorem.txt
+./sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % wc -l sed.txt
+       9 sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) ayeshasakhawatali@Murtazas-Air lorem % cd ..
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % ls -dq *lorem* | wc -l
+       2
+(base) ayeshasakhawatali@Murtazas-Air lab-bash % ls
+exercices	inputs		lorem		lorem-copy	outputs		readme.md
+(base) ayeshasakhawatali@Murtazas-Air lab-bash %
